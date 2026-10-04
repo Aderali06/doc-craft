@@ -1,0 +1,15 @@
+- id: doc-craft
+  name: doc-craft
+  description: "Automated Google-style Python docstring generator and validator"
+  entry: doc-craft generate
+  language: python
+  types: [python]
+  args: ["--in-place"]
+
+- id: doc-craft-check
+  name: doc-craft-check
+  description: "Check if Python functions have docstrings (CI / pre-commit validation)"
+  entry: doc-craft generate
+  language: python
+  types: [python]
+  args: ["--check"]
